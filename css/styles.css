@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* index styles */
+ol {
+    padding-top: 10px;
+    padding-left: 80px;
+    color: rgb(33, 117, 152);
+}
+
+ol li {
+    padding-top: 7px;
+    padding-left: 4px;
+}
+
+ol li a {
+    text-decoration: none;
+    color: rgb(122, 205, 240);
+}
+
+ol li:hover {
+    background-color: rgb(72, 136, 173);
+    width: fit-content;
+    border-radius: 5px;
+}
+
+ol li a:hover {
+    color: aliceblue;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    background-color: antiquewhite;
+    color: rgb(60, 55, 21);
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin-left: 40px;
+    color: rgb(60, 55, 21);
+}
+
+/* validasi styles */
+.container {
+    margin: 20px auto;
+    text-align: center;
+    width: 40%;
+}
+
+form {
+    background-color: bisque;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+form .input {
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    border: 0;
+    border-radius: 2px;
+}
+
+.input-group {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+form label:hover {
+    cursor: pointer;
+}
+
+.btn {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 0;
+    background-color: peru;
+    color: aliceblue;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgba(205, 134, 63, 0.646);
+    transform: scale(0.98);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Validasi</title>
+
+    <!-- my styles css -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <script>
+        function validateForm() {
+            // Dapatkan referensi ke elemen-elemen formulir
+            var nama = document.forms["myForm"]["nama"].value;
+            var email = document.forms["myForm"]["email"].value;
+
+            // Lakukan validasi
+            if (nama == "") {
+                alert("Nama wajib diisi");
+                return false;
+            }
+
+            if (email == "") {
+                alert("Email wajib diisi");
+                return false;
+            }
+
+            // Validasi apakah email sesuai dengan format yang benar
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+            if (!emailPattern.test(email)) {
+                alert("Email tidak valid. Harap masukkan alamat email yang benar.");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Formulir Validasi</h1>
+    <div class="container">
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+            <div class="input-group">
+                <label for="nama"><img src="../img/user (3).svg" class="label-img"></label>
+                <input type="text" id="nama" name="nama" placeholder="Nama" class="input">
+            </div>
+            
+            <div class="input-group">
+                <label for="email"><img src="../img/mail.svg" class="label-img"></label>
+                <input type="text" id="email" name="email" placeholder="Email" class="input">
+            </div>
+            
+    
+            <input type="submit" value="Submit" class="btn">
+        </form>
+    </div>
+    
+</body>
+</html>
